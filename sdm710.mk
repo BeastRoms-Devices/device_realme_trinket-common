@@ -136,8 +136,8 @@ PRODUCT_PACKAGES += \
     vndk-sp
 
 # WiFi Display
-PRODUCT_PACKAGES += \
-    libnl
+#PRODUCT_PACKAGES += \
+#    libnl
 
-PRODUCT_BOOT_JARS += \
-    WfdCommon
+#PRODUCT_BOOT_JARS += \
+#    WfdCommon
