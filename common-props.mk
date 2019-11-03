@@ -9,9 +9,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.camera.relight.enable=0 \
     ro.camera.attr.detect.enable=1 \
     ro.camera.notify_nfc=1 \
-    ro.camera.frontonly.motor=1 \
     camera.disable_zsl_mode=true \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap \
+    persist.vendor.camera.expose.aux=1
 
 # CNE and DPM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -56,7 +56,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Netflix custom property
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.netflix.bsp_rev=Q670-14477
+    ro.netflix.bsp_rev=Q6125-17995-1
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -69,7 +69,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.iwlan.enable=true \
     persist.rcs.supported=0 \
-    persist.vendor.ims.disableUserAgent=0
+    persist.vendor.ims.disableUserAgent=0 \
+    persist.dbg.volte_avail_ovr=1 \
+    persist.dbg.vt_avail_ovr=1 \
+    persist.dbg.wfc_avail_ovr=1 \
+    persist.radio.VT_HYBRID_ENABLE=1 \
+    persist.vendor.data.iwlan.enable=true \
+    persist.radio.NO_STAPA=1
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
